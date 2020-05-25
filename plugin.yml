@@ -1,0 +1,6 @@
+name: DropTags
+author: Unickorn
+version: 0.0.1
+api: 3.9.0
+main: Unickorn\DropTags\Main
+description: Stack and tag dropped items!
