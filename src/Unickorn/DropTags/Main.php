@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener
 			$packet->decode();
 
 			foreach($packet->getPackets() as $buf){
-				$pk = PacketPool::getPacketById(ord($buf{0}));
+				$pk = PacketPool::getPacketById(ord($buf[0]));
 				if($pk instanceof MoveActorAbsolutePacket){
 					$pk->setBuffer($buf);
 					$pk->decode();
